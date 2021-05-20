@@ -8,6 +8,11 @@ class SimpleGreeting extends LitElement {
     return { name: { type: String } };
   }
   constructor() {
+    var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.type = 'module';
+    script.src = "https://ebian00.github.io/LitElement/Web-Component.js";
+    head.appendChild(script);
     super();
     this.name = "World";
   }
