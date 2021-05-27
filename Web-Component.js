@@ -1,18 +1,9 @@
-import {
-  LitElement,
-  html,
-  css,
-} from "https://unpkg.com/lit-element/lit-element.js?module";
+import { LitElement, html } from "lit-element";
 class SimpleGreeting extends LitElement {
   static get properties() {
     return { name: { type: String } };
   }
   constructor() {
-    var head = document.getElementsByTagName('head')[0];
-    var script = document.createElement('script');
-    script.type = 'module';
-    script.src = "https://ebian00.github.io/LitElement/Web-Component.js";
-    head.appendChild(script);
     super();
     this.name = "World";
   }
