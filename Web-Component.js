@@ -1,4 +1,4 @@
-import { LitElement, html } from "lit-element";
+import { LitElement, html } from "https://unpkg.com/lit-element/lit-element.js?module";
 class SimpleGreeting extends LitElement {
   static get properties() {
     return { name: { type: String } };
