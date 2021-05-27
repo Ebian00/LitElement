@@ -2,7 +2,7 @@ import { LitElement, html } from "https://unpkg.com/lit-element/lit-element.js?m
 class SimpleGreeting extends LitElement {
   static get properties() {
     return { name: { type: String } };
-  }
+  } 
   constructor() {
     super();
     this.name = "World";
